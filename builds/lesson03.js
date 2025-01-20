@@ -1,8 +1,8 @@
 "use strict";
 class Course {
+    channel = null;
+    course = null;
     constructor(channel, course) {
-        this.channel = null;
-        this.course = null;
         this.channel = channel;
         this.course = course;
     }
