@@ -77,3 +77,10 @@ let funcionario:
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(7))
 console.log(funcionario.baterPonto(9))
+
+//union types
+let nota: number | string = 'dez'
+console.log(nota)
+console.log(nota)
+
+//checando tipos
