@@ -84,3 +84,37 @@ console.log(nota)
 console.log(nota)
 
 //checando tipos
+
+//Tipo never
+
+//tipo null
+let numeros: null 
+
+let numero2: null | number
+numero2 = 34
+
+//desafio
+type ContaBancaria = {
+    saldo:number,
+    depositar:(valor:number) => void
+}
+
+let contaBancaria:ContaBancaria = {
+    saldo:3000,
+    depositar(valor:number){
+        this.saldo += valor
+    }
+}
+type Conrrentista ={
+    nome:string,
+    contaBancaria:ContaBancaria,
+    contatos: string[]
+}
+
+let conrrentista:Conrrentista = {
+    nome: "Ana",
+    contaBancaria:contaBancaria,
+    contatos: ["21893466","346434354"]
+}
+console.log(conrrentista.contaBancaria.depositar(1000))
+console.log(conrrentista)

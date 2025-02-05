@@ -64,3 +64,22 @@ console.log(funcionario.baterPonto(9));
 let nota = 'dez';
 console.log(nota);
 console.log(nota);
+//checando tipos
+//Tipo never
+//tipo null
+let numeros;
+let numero2;
+numero2 = 34;
+let contaBancaria = {
+    saldo: 3000,
+    depositar(valor) {
+        this.saldo += valor;
+    }
+};
+let conrrentista = {
+    nome: "Ana",
+    contaBancaria: contaBancaria,
+    contatos: ["21893466", "346434354"]
+};
+console.log(conrrentista.contaBancaria.depositar(1000));
+console.log(conrrentista);
